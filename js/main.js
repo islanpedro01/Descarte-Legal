@@ -1,5 +1,9 @@
 import cards from '/js/cards.js';
 
+import '../styles/global.css';
+
+document.documentElement.classList.add('dark')
+
 function cartões(cards){
     return `<div class="max-w-sm max-h-sm m-auto h-auto mt-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
