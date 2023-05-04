@@ -2,7 +2,11 @@ import cards from '/js/cards.js';
 
 import '../styles/global.css';
 
-document.documentElement.classList.add('dark')
+const html = document.querySelector('html')
+const cardSpace = document.querySelector('.cards')
+const light = document.querySelector('.light')
+const dark = document.querySelector('.dark')
+const darkmode_button = document.querySelectorAll('.darkmode')
 
 function cartões(cards){
     return `<div class="max-w-sm max-h-sm m-auto h-auto mt-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -23,6 +27,11 @@ function cartões(cards){
 
 }
 
-const cardSpace = document.querySelector('.cards')
+function switchdarkmode(){
+    html.classList.toggle("dark")
+    light.classList.toggle("invisible")
+    dark.classList.toggle("invisible")
+}
 
+darkmode_button.forEach(button => button.addEventListener('click', function(e){ switchdarkmode()}))
 cardSpace.innerHTML = cards.map((card) => cartões(card)).join('');
