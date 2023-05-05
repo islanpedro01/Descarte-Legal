@@ -9,10 +9,10 @@
 </head>
 
 <body class="bg-green-300 dark:bg-gray-900 static">
-  <nav class="border-gray-200 border-b">
+  <nav class="border-gray-200 border-b font-bold">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Descarte Legal</span>
+        <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">Descarte Legal</span>
         <img src="imgs/Descarte Legal.svg" class="h-20 mt-2" alt="Descarte Legal logo" />
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
@@ -26,9 +26,9 @@
             clip-rule="evenodd"></path>
         </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <div class="hidden w-full md:block md:w-auto " id="navbar-default">
         <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-green-300 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-green-300 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          class="text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-green-300 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-green-300 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
             <a href="#"
               class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
@@ -55,18 +55,39 @@
     </div>
   </nav>
   
-  <main class="cards grid grid-cols-3">
+  <main class="grid grid-rows-3 md:mr-56 md:ml-56">
+
+    <div class="grid grid-cols-1 w-200 p-6 pt-0 mt-20 mb-20 shadow-2xl bg-white border ml-auto mr-auto border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">  
+      <h1 class="text-3xl text-center m-auto font-bold tracking-tight text-gray-900 dark:text-white">Junte-se a nós!</h1>
+      <p class="m-auto font-normal text-justify col-span-3 text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet risus feugiat in ante metus dictum at tempor. Sit amet consectetur adipiscing elit ut. Interdum velit laoreet id donec ultrices tincidunt arcu. Urna et pharetra pharetra massa. </p>
+      <button class="group inline-flex font-bold m-auto h-12 px-16 py-3 text-xl items-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+             Cadastre-se
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1 transition group-hover:translate-x-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+      
+      
+    </div>
+  <div class="cards grid grid-cols-3">
+  </div>
+    <div class="block w-200 p-6 mt-20 shadow-2xl bg-white border m-auto border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+      <h5 class="mb-2 pb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sobre o projeto</h5>
+      <p class="p-3 font-normal text-justify text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet risus feugiat in ante metus dictum at tempor. Sit amet consectetur adipiscing elit ut. Interdum velit laoreet id donec ultrices tincidunt arcu. Urna et pharetra pharetra massa. Laoreet id donec ultrices tincidunt. Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Libero nunc consequat interdum varius sit amet mattis vulputate enim. Purus faucibus ornare suspendisse sed nisi. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Felis bibendum ut tristique et egestas quis ipsum. Sed elementum tempus egestas sed sed risus pretium quam. Sed risus pretium quam vulputate. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Amet aliquam id diam maecenas. Cursus euismod quis viverra nibh cras pulvinar. Id diam maecenas ultricies mi eget.
+    </p>
+</div>
   </main>
+  <span class="fixed right-4 bottom-5 transition hover:scale-125">
     <button class="darkmode dark">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 bg-black border-2 rounded-full p-2 text-white fixed right-4 bottom-5">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 bg-black border-2 rounded-full p-2 text-white">
     <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
   </svg>
     </button>
-  <button class="darkmode light invisible">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 bg-white border-2 rounded-full p-2 text-black fixed right-4 bottom-5">
+  <button class="darkmode light hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 bg-white border-2 rounded-full p-2 text-black">
       <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
     </svg>    
   </button>
+</span>
+
   <script src="/js/main.js" type="module"></script>
 </body>
 
