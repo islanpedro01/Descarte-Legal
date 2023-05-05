@@ -11,7 +11,7 @@ const darkmode_button = document.querySelectorAll('.darkmode')
 
 
 function insertCards(cards){
-    return `<div class="max-w-sm self-center shadow-2xl max-h-sm m-auto h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    return `<div class="max-w-sm self-center shadow-2xl max-h-sm m-auto h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-10">
     <a href="#">
         <img class="rounded-t-lg" src=${cards.img} alt=>
     </a>
