@@ -12,6 +12,7 @@ export default {
     },
   },
   plugins: [],
-  darkMode: 'class'
+  darkMode: 'class',
+  base:'/Descarte-Legal/',
 }
 
