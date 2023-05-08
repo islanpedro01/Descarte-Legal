@@ -25,4 +25,4 @@
               </a>
             </div>
             </div>
-          `}function h(){l.classList.toggle("dark"),m.classList.toggle("hidden"),p.classList.toggle("hidden")}f.forEach(r=>r.addEventListener("click",function(o){h()}));u.innerHTML=d.map(r=>g(r)).join("");const n=document.querySelector("#text");function c(){const r="Descarte!".split("");n.innerHTML="",r.forEach((o,i)=>{setTimeout(()=>n.innerHTML+=o,250*i)}),setTimeout(()=>c(),4e3)}c();
+          `}function h(){l.classList.toggle("dark"),m.classList.toggle("hidden"),p.classList.toggle("hidden")}f.forEach(r=>r.addEventListener("click",function(o){h()}));u.innerHTML=d.map(r=>g(r)).join("");const n=document.querySelector("#text");function c(){const r=" Descarte!".split("");n.innerHTML="",r.forEach((o,i)=>{setTimeout(()=>n.innerHTML+=o,250*i)}),setTimeout(()=>c(),3500)}c();
