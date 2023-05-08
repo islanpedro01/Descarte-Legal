@@ -49,13 +49,15 @@ darkmode_button.forEach(button => button.addEventListener('click', function(e){ 
 cardSpace.innerHTML = cards.map((card) => insertCards(card)).join('');
 
 
+const titulo = document.querySelector('#text');
 
-function typeWriter(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
+function typeWriter() {
+    const textoArray = 'Descarte!'.split('');
+    titulo.innerHTML = '';
     textoArray.forEach((letra, i) => {
-      setTimeout(() => elemento.innerHTML += letra, 200 * i);
+      setTimeout(() => titulo.innerHTML += letra, 250 * i);
     });
+    setTimeout(() => typeWriter(), 4000);
   }
 
   // function typeWriter(elemento) {
@@ -66,5 +68,4 @@ function typeWriter(elemento) {
   //   }
   // }
 
-  const titulo = document.querySelector('#text');
-  typeWriter(titulo);
+  typeWriter();
