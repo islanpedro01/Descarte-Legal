@@ -52,12 +52,12 @@ cardSpace.innerHTML = cards.map((card) => insertCards(card)).join('');
 const titulo = document.querySelector('#text');
 
 function typeWriter() {
-    const textoArray = 'Descarte!'.split('');
+    const textoArray = ' Descarte!'.split('');
     titulo.innerHTML = '';
     textoArray.forEach((letra, i) => {
       setTimeout(() => titulo.innerHTML += letra, 250 * i);
     });
-    setTimeout(() => typeWriter(), 4000);
+    setTimeout(() => typeWriter(), 3500);
   }
 
   // function typeWriter(elemento) {
