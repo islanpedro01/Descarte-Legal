@@ -7,6 +7,7 @@ const cardSpace = document.querySelector('.cards')
 const light = document.querySelector('.light')
 const dark = document.querySelector('.dark')
 const darkmode_button = document.querySelectorAll('.darkmode')
+const titulo = document.querySelector('#text');
 
 function insertCards(cards){
     return `<div class=" shadow-xl m-5 overflow-hidden rounded-xl bg-white dark:bg-gray-800 dark:border-gray-700 dark:text-white m-10">
@@ -45,12 +46,6 @@ function switchdarkmode(){
     dark.classList.toggle("hidden")
 }
 
-darkmode_button.forEach(button => button.addEventListener('click', function(e){ switchdarkmode()}));
-cardSpace.innerHTML = cards.map((card) => insertCards(card)).join('');
-
-
-const titulo = document.querySelector('#text');
-
 function typeWriter() {
     const textoArray = ' Descarte!'.split('');
     titulo.innerHTML = '';
@@ -68,4 +63,6 @@ function typeWriter() {
   //   }
   // }
 
+  darkmode_button.forEach(button => button.addEventListener('click', function(e){ switchdarkmode()}));
+  cardSpace.innerHTML = cards.map((card) => insertCards(card)).join('');
   typeWriter();
