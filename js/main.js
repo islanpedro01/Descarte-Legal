@@ -4,8 +4,6 @@ import '../styles/global.css';
 
 const html = document.querySelector('html')
 const cardSpace = document.querySelector('.cards')
-const light = document.querySelector('.light')
-const dark = document.querySelector('.dark')
 const darkmode_button = document.querySelectorAll('.darkmode')
 const titulo = document.querySelector('#text');
 
@@ -42,8 +40,6 @@ function insertCards(cards){
 
 function switchdarkmode(){
     html.classList.toggle("dark")
-    light.classList.toggle("hidden")
-    dark.classList.toggle("hidden")
 }
 
 function typeWriter() {
